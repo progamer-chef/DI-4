@@ -57,7 +57,7 @@
 </head>
 <body>
   <div class="text">
-    <b>dear internet</b>
+    <b><a href="#" onclick="goToRandomlink()" target="_blank">dear internet</a></b>
     <button class="next-button" onclick="navigateToNextPage()">Next</button>
   </div>
   <div class="logo">
@@ -72,5 +72,33 @@
       window.location.href = "https://progamer-chef.github.io/DI-5/"; // Replace with your desired URL
     }
   </script>
+  
+   <script>
+        function goToRandomLink() {
+            const links = [
+              "https://red-atagi.github.io/letter-to-the-internet/",
+              "https://bbroscius.github.io/",
+              "https://ncadiche.github.io/letter-to-internet/",
+              "https://tchan1002.github.io/open-letter/",
+              "https://dianachu0209.github.io/letter-to-internet/",
+              "https://progamer-chef.github.io/DI-1/",
+              "https://thegoatannie.github.io/css_letter/",
+              "https://shfessuh.github.io/internet_letter/",
+              "https://sanaajade.github.io/DearInternet_Sanaa/",
+              "https://ronthekiehn.github.io/internet-letter/",
+              "https://alex-malm.github.io/letter-to-the-internet/",
+              "https://oaobielodan.github.io/my-open-letter/",
+              "https://oluwalonimi2004.github.io/Dearest-Internet/",
+              "https://manuelapinheiro.github.io/letter_to_the_internet_part1/",
+              "https://tigo-poncedeleon.github.io/an-open-letter-to-the-internet/",
+              "https://yruann.github.io/letter-to-internet/",
+              "https://abigailstarr.github.io/internet-letter/",
+            ];
+
+            const randomIndex = Math.floor(Math.random() * links.length);
+            const randomLink = links[randomIndex];
+            window.location.href = randomLink;
+        }
+    </script>
 
 </body>
